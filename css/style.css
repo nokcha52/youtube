@@ -61,11 +61,14 @@ main > section {
     margin-left: 10px;
 }
 .search_box {
+    width: 40vh;
     border: 1px solid#7e7e7e;
-    padding: 10px;
-    border-radius: 24px;
-    
+    padding: 10px 0;
+    border-radius: 24px; 
+    margin: 0;   
+    position: relative;
 }
+
 input {
     background: none;
     border: none;
@@ -75,8 +78,12 @@ input {
     font-size: 16px;
     transform: translateX(16px);  
 }
+.search_box > input {
+    width: 200px;
+}
 .search_box > i {
-    transform: translateX(-16px)
+    position: absolute;
+    ;right: 20px
 }
 .header_right {
     margin-right: 60px;
@@ -107,7 +114,7 @@ main {
     margin-top: 40px;
 }
 iframe {
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     /* width: 1200px; */
 }
 .title {
