@@ -1,17 +1,21 @@
-@font-face {
-    font-family: 'SchoolSafeUniverse';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
-    font-weight: normal;
-    font-display: swap;
-}
 
+@font-face {
+    font-family: "LeagueGothic";
+    src: url(./LeagueGothic-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 header {
-    display: flex;
-    width: 100%;
-    /* height: 40px; */
+    display: flex;    
+    width: 100%;   
     justify-content: space-between;
-    align-items: center;
-    margin: 10px 20px;    
+    align-items: center;    
+    padding: 8px 20px;   
+    position: fixed;
+    top: 0; 
+    left: 0;
+    background-color: #fff;
+    z-index: 99;   
 }
 .header_left {
     display: flex;
@@ -22,21 +26,27 @@ header {
     display: flex;
     padding: 12px;
     gap: 4px;
+    align-items: center;
 }
 .logo > h1 {
-    font-family: 'SchoolSafeUniverse';
-    font-weight: 900;
-    font-size: 20px;   
+    font-family: 'LeagueGothic';
+    font-weight: 400;    
+    font-size: 28px;
+    transform: scaleX(110%);
 }
 .logo > h2 {
     font-size: 8px;
+    transform: translateY(-10px);
 }
-main {
+main {    
     display: flex;
 }
+main > section {
+    margin-top: 50px;
+}
 .youtube_logo > img {
-    height: 20px;
-    width: 30px;   
+    height: 25px;
+    width: 35px;   
 }
 
 .header_middle,
@@ -178,6 +188,7 @@ iframe {
 }
 .description > div > p {
     font-weight: 500;
+    font-size: 14px;
 }
 .description > div > span {
     color: #838282;
@@ -185,8 +196,10 @@ iframe {
 }
 .description > p {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 430;
     line-height: 18px;
+    color: #343434;
 }
 .description > button {
     font-weight: 600;
@@ -221,20 +234,18 @@ iframe {
     font-size: 14px;
     line-height: 20px;
 }
-
+.comments > div > div > p > a {
+    color: rgb(34, 98, 247);
+    font-weight: 450;
+}
+.comments > div > div > button {
+    color: #343434;
+    padding: 0 0 8px 0;
+}
 .comment_profile > img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    transform: translateY(8px);
-}
-
-.comment_button {
-    display: flex;
-}
-
-.comment_button > button:first-child {
-    display: inline;
 }
 .comments {
     margin: 20px;   
@@ -259,9 +270,16 @@ iframe {
     display: flex;
     padding: 10px 10px 10px 0;
     gap: 8px;
-    margin: 0;
+    margin: 0;    
 }
-
+.comment_write > button > i,
+.comment_write > button > p
+ {
+    color: rgb(34, 97, 223);
+}
+aside {
+    margin-top: 40px;
+}
 .aside_buttons {
     width: 400px;
     display: flex;
