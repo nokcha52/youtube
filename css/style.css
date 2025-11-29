@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'SchoolSafeUniverse';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    /* height: 40px; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;    
+}
+.header_left {
+    display: flex;
+    /* margin: 4px 30px; */
+    align-items: center;
+}
+.logo {
+    display: flex;
+    padding: 12px;
+    gap: 4px;
+}
+.logo > h1 {
+    font-family: 'SchoolSafeUniverse';
+    font-weight: 900;
+    font-size: 20px;   
+}
+.logo > h2 {
+    font-size: 8px;
+}
+main {
+    display: flex;
+}
+.youtube_logo > img {
+    height: 20px;
+    width: 30px;   
+}
+
+.header_middle,
+.search {
+    display: flex;
+}
+.header_middle > button {
+    background-color: #f1f1f1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.search_box {
+    border: 1px solid#000;
+    padding: 10px;
+    border-radius: 24px;
+    
+}
+input {
+    background: none;
+    border: none;
+    width: 550px;
+    height: 20px;
+    outline: none;
+    font-size: 16px;
+    transform: translateX(16px);  
+}
+.search_box > i {
+    transform: translateX(-16px)
+}
+.header_right {
+    margin-right: 30px;
+}
+.header_right,
+.header_right > button {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 16px;
+}
+.header_right > button {
+    background: #f1f1f1;
+    padding: 10px 12px;
+    border-radius: 28px;
+    gap: 8px;
+}
+.profile > img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+main {
+    width: 100%;
+    justify-content: center;    
+    gap: 20px;
+}
+iframe {
+    border-radius: 0 0 20px 20px;
+    /* width: 1200px; */
+}
+
+.title > h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subscribe,
+.channel,
+.good_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.channel > figure > img {
+    width: 50px;
+    height: 50px;
+}
+.channel > button {
+    background-color: #000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 32px;
+}
+.good_buttons > button {
+    background-color: #f1f1f1;
+    padding: 8px;
+}
+
+
+.comments {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comment_profile > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transform: translateY(8px);
+}
+
+.comment_button {
+    display: flex;
+}
+
+.comment_button > button:first-child {
+    display: inline;
+}
+.comments {
+    margin: 20px;   
+}
+.comments > div > div > figure >img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+.comment_write {
+    display: flex;
+    padding: 10px 10px 10px 0;
+    gap: 8px;
+}
+
+.aside_buttons {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside_buttons > button {
+    background: #f1f1f1;
+    padding: 4px 12px;
+    border-radius: 8px;
+    margin: 4px;
+}
+.playlist_box {
+    width: 400px;   
+}
+.playlist_box > a {
+    display: flex;
+    gap: 8px;
+    margin: 12px;
+}
+.playlist_box > a > figure > img {
+    height: 100px;
+    width: 160px;
+    border-radius: 8px;    
+}
+.playlist_box > a > figure {
+    transform: translateY(4px);
+}
+.playlist_text {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.playlist_text > h2 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 200px;
+}
+.playlist_text > p,
+.playlist_text > span {
+    font-size: 12px;
+}
